@@ -1,9 +1,9 @@
 ## Restaurant_Scheduling
 
-#Restaurant Scheduling System
+# Restaurant Scheduling System
 The Restaurant Scheduling System is a web-based application that allows customers to request appointments and make reservations at a restaurant. It provides an intuitive user interface for customers to view available dates and times, submit their booking requests, and receive automated reminders. The system also includes an admin interface for restaurant staff to manage reservations, handle booking requests, and communicate with customers.
 
-#Features
+# Features
 •  Customer Appointment Request: Customers can view available dates and times through a calendar interface and submit their booking requests.
 
 •  Form Validation and CAPTCHA: Required customer information, such as name, email, phone number, and the number of persons, must be entered correctly.      CAPTCHA integration protects against spam bots.
@@ -14,13 +14,13 @@ The Restaurant Scheduling System is a web-based application that allows customer
 •  Admin Dashboard: Restaurant staff can access a secure admin dashboard to manage reservations, review booking requests, communicate with customers, and     view relevant analytics.
 •  Data Storage: The system securely stores customer data, reservation details, and booking requests in a database.
 
-#Technologies Used
+# Technologies Used
 • Frontend: React, Tailwind
 • Backend: Node.js, Express.js
 • Database:  MongoDB (Choose based on your preference and requirements)
 • Third-Party Services: SendGrid (for email notifications), Twilio (for SMS notifications)
 
-#Installation and Setup
+# Installation and Setup
 1- Clone the repository or download the source code.
 2- Install the necessary dependencies using npm install.
 3- Configure the backend by setting up the database connection and necessary environment variables.
@@ -28,7 +28,7 @@ The Restaurant Scheduling System is a web-based application that allows customer
 5- Start the backend server using npm start or the preferred command.
 6- Configure and deploy the frontend files to a web server or hosting provider.
 
-#Usage
+# Usage
 • Customers can access the scheduling system by visiting the restaurant's website and navigating to the appointment booking section.
 • They can view the available dates and times, select a suitable option, and fill in the required information.
 • After submitting the booking request, they will receive an automated email and SMS reminder closer to the reservation time.
