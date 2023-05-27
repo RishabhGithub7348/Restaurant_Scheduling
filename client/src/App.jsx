@@ -1,33 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useContext, useState } from 'react'
+import Scheduler from './components/Schedule'
+import Calendar from 'react-calendar'
+import Calandy from './components/Calandy'
+import SetTimezone from './components/SetTimezone'
+import Time from './components/Time'
+import { UserContext } from './context/userContext'
+
+
+
+
 
 function App() {
   const [count, setCount] = useState(0)
+  const { country, setCountry, timezone, 
+    setTimezone , showCalendar,
+    setShowCalendar,
+    showForm,
+    setShowForm, } = useContext(UserContext);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='flex flex-col h-screen w-full items-center '>
+      <Calandy/>
+      
+     
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
